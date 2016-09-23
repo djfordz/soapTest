@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+include_once(__DIR__ . '/SoapTest.php');
+
+$logger = new ProxyLogger();
+$logger->FileFolder = "./log/";
+$logger->FileName = "test.log";
+$logger->Open();
+ 
+soapTest($logger);
+ 
+$logger->Close();
