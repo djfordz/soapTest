@@ -7,9 +7,9 @@ function soapTest($logger)
     // add endpoint 
     $mage_url = 'https://dfordz.com/miniproxy.php?';
     // add user
-    $mage_user = /*redacted*/; 
+    $mage_user = 'test'; 
     // add api_key
-    $mage_api_key = /*redacted*/; 
+    $mage_api_key = 'test'; 
  
     /*
      * change params to what is needed for your soap call. 

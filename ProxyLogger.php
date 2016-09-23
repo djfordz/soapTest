@@ -4,14 +4,14 @@
  
 class ProxyLogger{
      
-    var $FH;
-    var $FileFolder;
-    var $FileName;
+    var $FH = null;
+    var $FileFolder = null;
+    var $FileName = null;
      
     function Open() {
         $filePath = $this->FileFolder.$this->FileName."_".date("Ymd",time()).".log";
         $this->FH = fopen($filePath, 'a'); 
-        if(!$this->FH) {
+        if(empty($this->FH)) {
             die("can't open file: " . $filePath);
         }
             
