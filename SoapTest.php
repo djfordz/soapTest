@@ -5,7 +5,7 @@ include_once('./ProxyLogger.php');
 function soapTest($logger)
 {
     // add endpoint 
-    $mage_url = 'https://dfordz.com/miniproxy.php?';
+    $mage_url = 'http://example.com/api/soap_v2?wsdl';
     // add user
     $mage_user = 'test'; 
     // add api_key
