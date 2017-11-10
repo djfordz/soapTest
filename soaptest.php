@@ -19,7 +19,7 @@ class SoapTest {
          */
 
         // add endpoint 
-        $mage_url = 'http://test.com/index.php/api/v2_soap/index/?wsdl=1';
+        $mage_url = 'http://dev1.usa.rhinorugby.com/api/v2_soap/index/?wsdl=1';
         // add user
         $mage_user = 'mojotest'; 
         // add api_key
@@ -29,7 +29,7 @@ class SoapTest {
         // Set your parameters.
 
         // Use these params most of time
-        $params = array('trace' => 1, 'cache_wsdl' => WSDL_CACHE_DISK, 'exceptions' => 1); 
+        $params = array('trace' => 1, 'exceptions' => 1); 
 
         // Below is for adding gzip encoding.
         //$params = array('trace' => 1, 'cache_wsdl'=> 1, "stream_context" => stream_context_create(array('http' => array('header' => 'Accept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3'))));
